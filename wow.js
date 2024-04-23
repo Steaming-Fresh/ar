@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const ganchor = mindarThree.addAnchor(1);
         //加载模型
         const glb = await loadGLB('dog.glb');
-        glb.scene.scale.set(6, 6, 6);//尺寸设置。不同模型设置的可能不同，视频说凭感觉试
+        glb.scene.scale.set(5, 5, 5);//尺寸设置。不同模型设置的可能不同，视频说凭感觉试
         glb.scene.position.set(0, -0.4, 0);//位置设置
         anchor.group.add(glb.scene);
         ganchor.group.add(glb.scene.clone());//克隆一个模型，放到第二张图片上
